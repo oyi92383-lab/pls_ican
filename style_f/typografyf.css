@@ -1,0 +1,173 @@
+/* ===== ОБЩАЯ ТИПОГРАФИКА САЙТА ===== */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+}
+
+/* ===== ТЕКСТ СТАТЕЙ НА ГЛАВНОЙ СТРАНИЦЕ ===== */
+
+.content-head1 h3,
+.content-head2 h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content-maine1 h4,
+.content-maine2 h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content-maine1 p,
+.content-maine2 p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+.content-foot1 h3,
+.content-foot2 h4 {
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* ===== ТЕКСТ БОКОВОЙ ПАНЕЛИ ===== */
+
+.rubrics-title1 h4,
+.rubrics-title2 h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.rubrics-list1,
+.rubrics-list2 {
+    font-size: 1rem;
+}
+
+.rubrics-list1 li,
+.rubrics-list2 li {
+    color: #000000;
+}
+
+/* ===== ТЕКСТ ПОДВАЛА ===== */
+
+.about-faq h4,
+.site-foot h4,
+.site-foot a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ===== ТЕКСТ СТРАНИЦЫ АРХИВА ===== */
+
+.archive-page-title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.archive-photo h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.archive-info h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.archive-info p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* ===== ТЕКСТ КНОПКИ РАЗВЕРНУТЬ ===== */
+
+.archive-details summary {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5b2b67;
+}
+
+.archive-details p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* ===== ТЕКСТ КНОПОК В ШАПКЕ АРХИВА ===== */
+
+.home-head-btn,
+.add-head-btn {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* ===== ТЕКСТ ФОРМЫ ДОБАВЛЕНИЯ МОДЕЛИ ===== */
+
+#add-model h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#add-model label {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#add-model input,
+#add-model select,
+#add-model textarea {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    color: #000000;
+}
+
+#add-model input::placeholder,
+#add-model textarea::placeholder {
+    color: #555555;
+}
+
+#add-model input[type="submit"],
+#add-model input[type="reset"] {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ТЕКСТА ===== */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .archive-page-title h2 {
+        font-size: 1.25rem;
+    }
+
+    .home-head-btn,
+    .add-head-btn {
+        font-size: 0.9rem;
+    }
+
+    .about-faq h4 {
+        font-size: 0.85rem;
+    }
+}

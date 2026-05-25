@@ -1,0 +1,153 @@
+/* Общие настройки ссылок */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Соцсети */
+.soseti-head a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+/* Списки справа */
+.rubrics-list1,
+.rubrics-list2 {
+    margin: 0;
+    padding-left: 1.4rem;
+    list-style-type: disc;
+}
+
+.rubrics-list1 li,
+.rubrics-list2 li {
+    margin-bottom: 0.5rem;
+    color: #222222;
+    font-size: 0.95rem;
+}
+
+/* Ссылки в списках */
+.rubrics-list1 a,
+.rubrics-list2 a {
+    color: #222222;
+}
+
+/* Наведение на ссылки в списках */
+.rubrics-list1 a:hover,
+.rubrics-list2 a:hover {
+    color: #6d2b79;
+    text-decoration: underline;
+}
+
+/* Ссылка FAQ в подвале */
+.about-faq a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.site-foot,
+.site-foot h4,
+.site-foot a {
+    color: #ffffff;
+}
+.about-faq a:hover {
+    color: #dddddd;
+}
+
+
+
+
+.os-form input[type="submit"],
+.os-form input[type="reset"] {
+    cursor: pointer;
+}
+/* ===== КНОПКА РАЗВЕРНУТЬ ===== */
+
+.archive-details summary {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #5b2b67;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.archive-details summary:hover {
+    color: #6d2b79;
+    text-decoration: underline;
+}
+
+.archive-details summary::marker {
+    content: "";
+}
+
+.archive-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.archive-details .close-text {
+    display: none;
+}
+
+.archive-details[open] .open-text {
+    display: none;
+}
+
+.archive-details[open] .close-text {
+    display: inline;
+}
+/* ===== ССЫЛКА-КНОПКА В ШАПКЕ ===== */
+
+.home-head-btn,
+.add-head-btn {
+    text-decoration: none;
+}
+
+.home-head-btn:hover,
+.add-head-btn:hover {
+    color: #6d2b79;
+    text-decoration: underline;
+}
+/* ===== ПОДСКАЗКИ ПРИ НАВЕДЕНИИ НА СОЦСЕТИ ===== */
+
+.social-link {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+
+    margin-bottom: 0.3rem;
+    padding: 0.25rem 0.5rem;
+
+    background-color: rgba(20, 10, 25, 0.9);
+    color: #ffffff;
+
+    font-size: 0.8rem;
+    white-space: nowrap;
+
+    border-radius: 0.4rem;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    z-index: 100;
+}
+
+.social-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

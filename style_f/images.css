@@ -1,0 +1,342 @@
+
+body {
+    background-image: url("../images/Background.jpg");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #12051f;
+}
+
+/* Все картинки резиновые */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo1-head img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.logo2-head img {
+    display: block;
+    max-width: 130%;
+    height: auto;
+}
+
+
+
+.find {
+    --input-height: 1.6rem;
+    --lupa-size: 1rem;
+
+    width: 100%;
+    min-height: 3.2rem;
+
+    background-image: url("../images/Search.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    display: flex;
+    justify-content: center; /* центр по ширине */
+    align-items: center;     /* центр по высоте */
+
+    padding: 0; /* важно, иначе padding будет сдвигать */
+}
+.search-btn {
+    width: var(--input-height);
+    height: var(--input-height);
+
+    background-color: #ffffff;
+    background-image: url("../images/lupa.png");
+    background-repeat: no-repeat;
+    background-size: var(--lupa-size) var(--lupa-size);
+    background-position: center;
+
+    border: 0.08rem solid #777777;
+    border-right: none;
+    border-radius: 1rem 0 0 1rem;
+
+    padding: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #eeeeee;
+}
+.find input {
+    width: 70%;
+    height: var(--input-height);
+
+    border: 0.08rem solid #777777;
+    border-left: none;
+    border-radius: 0 1rem 1rem 0;
+
+    outline: none;
+    background: #ffffff;
+
+    font-size: 0.8rem;
+    color: #333333;
+    padding-left: 0.4rem;
+}
+}.soseti-head img {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+}
+
+
+/* Карточки записей */
+.content1,
+.content2 {
+    background-color: #ffffff;
+    border: 0.15rem solid rgba(40, 20, 45, 0.8);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+/* Верхняя часть статей */
+.content-head1,
+.content-head2 {
+    background: linear-gradient(#ffffff, #d8d8d8);
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Основная часть статей */
+.content-maine1,
+.content-maine2 {
+    background-color: #ffffff;
+}
+
+/* Нижняя часть статей */
+.content-foot1,
+.content-foot2 {
+    background: linear-gradient(#ffffff, #eeeeee);
+    border-top: 1px solid #dddddd;
+}
+
+.content,
+.side-bar {
+    background-color: rgba(10, 5, 15, 0.45);
+    border: 0.12rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+}
+.find::before {
+    content: "";
+    width: var(--input-height);
+    height: var(--input-height);
+
+    background-color: #ffffff;
+    background-image: url("../images/lupa.png");
+    background-repeat: no-repeat;
+    background-size: var(--lupa-size) var(--lupa-size);
+    background-position: center;
+
+    border: 0.08rem solid #777777;
+    border-right: none;
+    border-radius: 1rem 0 0 1rem;
+
+    flex-shrink: 0;
+}
+
+.content-head1::after,
+.content-head2::after {
+    content: "27";
+    position: absolute;
+
+    width: 3rem;
+    height: 3rem;
+    bottom: 0.3rem;
+    right: 0.6rem;
+
+    background-image: url("../images/calendar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Блоки справа */
+.side-bar1,
+.side-bar2 {
+    background-color: #ffffff;
+    border: 0.15rem solid rgba(40, 20, 45, 0.8);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+/* Заголовки справа */
+.rubrics-title1,
+.rubrics-title2 {
+    background: linear-gradient(#ffffff, #d7d7d7);
+    padding: 0.01rem 1rem;
+    margin: -0.2rem -0.5rem 0.4rem -0.5rem;
+    border-bottom: 1px solid #cccccc;
+}
+.rubrics-title1,
+.rubrics-title2 {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.rubrics-title1::before,
+.rubrics-title2::before {
+    content: "✓";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 1rem;
+    color: #5b2b67;
+    font-weight: bold;
+}
+/* Подвал */
+.site-foot {
+    background-color: rgba(20, 10, 25, 0.8);
+    border-radius: 0.6rem;
+}
+
+
+
+
+
+.os-form-block {
+    background-color: rgba(10, 5, 15, 0.45);
+    border: 0.12rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+}
+
+.os-form input,
+.os-form select,
+.os-form textarea {
+    border: 0.08rem solid #777777;
+    border-radius: 0.4rem;
+    background-color: #ffffff;
+}
+/* ===== ОФОРМЛЕНИЕ СТРАНИЦЫ АРХИВА ===== */
+
+.archive-block {
+    background-color: rgba(10, 5, 15, 0.45);
+    border: 0.12rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+}
+
+
+
+.archive-photo img {
+    width: 100%;
+    max-width: 16rem;
+    border-radius: 0.6rem;
+    border: 0.12rem solid rgba(40, 20, 45, 0.8);
+}
+
+.archive-details summary {
+    background: linear-gradient(#ffffff, #eeeeee);
+    border: 0.1rem solid #cccccc;
+    border-radius: 0.5rem;
+}
+
+.archive-details[open] {
+    background-color: #ffffff;
+}
+/* ===== ОФОРМЛЕНИЕ ОТДЕЛЬНОГО БЛОКА "АРХИВ" ===== */
+
+
+.home-head-btn,
+.add-head-btn {
+    background: linear-gradient(#ffffff, #eeeeee);
+    border: 0.08rem solid #777777;
+    border-radius: 1rem;
+}
+
+/* ===== ОФОРМЛЕНИЕ СТРАНИЦЫ АРХИВА ===== */
+
+.archive-block {
+    background-color: rgba(10, 5, 15, 0.45);
+    border: 0.12rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+}
+
+.archive-page-title,
+.archive-card {
+    background-color: #ffffff;
+    border: 0.15rem solid rgba(40, 20, 45, 0.8);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.archive-page-title {
+    background: linear-gradient(#ffffff, #d8d8d8);
+}
+/* ===== ТЁМНАЯ ОКАНТОВКА БЛОКА АРХИВ ===== */
+
+.archive-title-frame {
+    background-color: rgba(10, 5, 15, 0.45);
+    border: 0.12rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+}
+
+.archive-page-title {
+    background: linear-gradient(#ffffff, #d8d8d8);
+    border: 0.15rem solid rgba(40, 20, 45, 0.8);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+/* ===== МОБИЛЬНОЕ ОФОРМЛЕНИЕ ===== */
+
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+    }
+
+    .archive-title-frame,
+    .archive-block {
+        border-radius: 0.5rem;
+    }
+
+    .archive-page-title,
+    .archive-card {
+        border-radius: 0.6rem;
+    }
+}
+/* ===== ФОН И ОФОРМЛЕНИЕ ФОРМЫ ДОБАВЛЕНИЯ МОДЕЛИ ===== */
+
+.add-model-block {
+    background-color: rgba(10, 5, 15, 0.45);
+    border: 0.12rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.7rem;
+}
+
+.add-model-form {
+    background-color: transparent;
+    border: none;
+}
+
+.add-model-form input,
+.add-model-form select,
+.add-model-form textarea {
+    background-color: #ffffff;
+    border: 0.08rem solid #777777;
+    border-radius: 0.4rem;
+}
+
+.model-form-buttons input {
+    background: linear-gradient(#ffffff, #eeeeee);
+    border: 0.08rem solid #777777;
+    border-radius: 0.6rem;
+}

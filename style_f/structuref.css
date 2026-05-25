@@ -1,0 +1,576 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.main-page {
+    width: 96%;
+    max-width: 90rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== ШАПКА ===== */
+
+.site-head {
+    width: 100%;
+    min-height: 15rem;
+    overflow: viible;
+}
+
+/* Логотип слева */
+.logo1-head {
+    float: left;
+    width: 34%;
+    min-height: 5rem;
+    margin-top: 2rem;
+}
+
+.logo1-head img {
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 8%;
+}
+
+/* Поиск справа сверху */
+.finder-head {
+    float: right;
+    width: 29%;
+    margin-right: 10%;
+}
+
+.logo2-head {
+    float: right;
+    clear: right;
+    width: 12%;
+    min-height: 8rem;
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Соцсети справа под Apple */
+.soseti-head {
+    float: right;
+    clear: right;
+    width: 40%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+
+    min-height: 5rem;
+    padding-bottom: 1rem;
+}
+
+/* ===== ОСНОВНАЯ ЧАСТЬ ===== */
+
+.site-maine {
+    width: 100%;
+    margin: 0rem auto 0;
+}
+
+/* Очистка float */
+.site-maine::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Левая колонка */
+.content {
+    float: left;
+    width: 61%;
+    margin-left: 2%;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+/* Правая колонка */
+.side-bar {
+    float: right;
+    width: 28%;
+    margin-right: 2%;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.content1:first-child,
+.side-bar1:first-child {
+    margin-top: 0;
+}
+
+.content1:last-child,
+.content2:last-child,
+.side-bar1:last-child,
+.side-bar2:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== СТАТЬИ ===== */
+.content {
+    position: relative;
+    padding: 1rem;
+}
+
+.content1,
+.content2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.content-head1,
+.content-head2 {
+    padding: 0rem 1rem;
+    min-height: 2rem;
+}
+
+.content-maine1,
+.content-maine2 {
+    display: block;
+    padding: 0rem 1rem;
+    min-height: 2rem;
+}
+
+.content-foot1,
+.content-foot2 {
+    padding: 0.2rem 1rem;
+}
+.content-head1,
+.content-head2,
+.content-foot1,
+.content-foot2 {
+    position: relative;
+}
+
+/* ===== БОКОВАЯ ПАНЕЛЬ ===== */
+.side-bar{
+    position: relative;
+    padding: 1rem;
+}
+
+.side-bar1,
+.side-bar2 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.rubrics-title1,
+.rubrics-title2 {
+    margin-bottom: 0.4rem;
+    min-height: 1rem;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+.site-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-faq {
+    width: 100%;
+}
+/* ===== АДАПТИВНОСТЬ ===== */
+
+@media (max-width: 900px) {
+    .site-head {
+        min-height: auto;
+    }
+
+    .logo1-head,
+    .finder-head,
+    .logo2-head,
+    .soseti-head {
+        width: 48%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .content,
+    .side-bar {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .side-bar {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .soseti-head {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo1-head,
+    .finder-head,
+    .logo2-head,
+    .soseti-head {
+        float: none;
+        clear: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo1-head img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .soseti-head {
+        justify-content: center;
+    }
+}
+/* ===== ФОРМА ОС ===== */
+
+.os-form-block {
+    width: 96%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+.os-form {
+    width: 100%;
+}
+
+.os-form p {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1% 1rem 0;
+}
+
+.os-form input,
+.os-form select,
+.os-form textarea {
+    width: 100%;
+}
+
+.os-form input[type="radio"],
+.os-form input[type="checkbox"],
+.os-form input[type="color"],
+.os-form input[type="range"] {
+    width: auto;
+}
+
+.os-form textarea {
+    min-height: 7rem;
+    resize: vertical;
+}
+
+.form-buttons {
+    width: 100%;
+}
+.os-form-block,
+.os-form-block h2,
+.os-form-block label,
+.os-form-block span,
+.os-form-block p {
+    color: #ffffff;
+}
+@media (max-width: 700px) {
+    .os-form p {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+/* ===== СТРАНИЦА АРХИВА ===== */
+
+.archive-main {
+    width: 96%;
+    margin: 1rem auto;
+}
+
+.archive-block {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+
+.archive-card {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.archive-photo {
+    float: left;
+    width: 28%;
+    
+    margin-right: 2%;
+    text-align: center;
+}
+
+.archive-info {
+    float: right;
+    width: 70%;
+}
+
+.archive-card::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.archive-details {
+    margin-top: 0.8rem;
+}
+
+.archive-details p {
+    margin-top: 0.8rem;
+}
+
+.archive-foot {
+    margin-top: auto;
+}
+
+/* ===== ОТДЕЛЬНЫЙ ЗАГОЛОВОК АРХИВА ===== */
+
+.archive-page-title {
+    width: 100%;
+    margin: -5rem auto 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ===== КНОПКИ ПОД ПОИСКОМ В ШАПКЕ ===== */
+
+.header-btn-row {
+    width: 100%;
+    margin: 6rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.home-head-btn,
+.add-head-btn {
+    display: block;
+    width: 48%;
+    padding: 0.1rem 0.4rem;
+    text-align: center;
+}
+
+/* Чтобы кнопка нормально вставала под поиском */
+.finder-head {
+    text-align: center;
+}
+/* ===== ТЁМНАЯ ОКАНТОВКА БЛОКА АРХИВ ===== */
+
+.archive-title-frame {
+    width: 100%;
+    margin: -5rem auto 0.5rem auto;
+    padding: 0.2rem;
+}
+
+.archive-page-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .archive-page-title {
+        width: 80%;
+    }
+
+    .home-head-btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .archive-page-title {
+        width: 100%;
+    }
+
+    .home-head-btn {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .archive-photo,
+    .archive-info {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .archive-photo {
+        margin-bottom: 1rem;
+    }
+}
+/* ===== СДВИГ СОДЕРЖИМОГО КАРТОЧКИ НИЖЕ ===== */
+
+.archive-photo,
+.archive-info {
+    transform: translateY(0.8rem);
+}
+/* ===== АДАПТИВНОСТЬ ДЛЯ СТРАНИЦЫ АРХИВА ===== */
+
+@media (max-width: 900px) {
+    .archive-main {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .archive-title-frame {
+        width: 100%;
+        margin: 0 auto 1rem auto;
+        padding: 0.3rem;
+    }
+
+    .archive-page-title {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .archive-card {
+        padding: 1rem;
+    }
+
+    .archive-photo,
+    .archive-info {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        transform: none;
+    }
+
+    .archive-photo {
+        margin-bottom: 1rem;
+    }
+
+    .archive-photo img {
+        max-width: 18rem;
+    }
+
+    .home-head-btn {
+        width: 70%;
+        margin: 0.5rem auto 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-page {
+        width: 96%;
+    }
+
+    .archive-block {
+        padding: 0.6rem;
+    }
+
+    .archive-card {
+        padding: 0.7rem;
+    }
+
+    .archive-photo img {
+        max-width: 100%;
+    }
+
+    .archive-info h3 {
+        text-align: center;
+    }
+
+    .home-head-btn {
+        width: 90%;
+        margin: 0.4rem auto 0 auto;
+        padding: 0.25rem 0.5rem;
+    }
+}
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ДЛЯ СТРАНИЦЫ АРХИВА ===== */
+
+@media (max-width: 600px) {
+    .home-head-btn {
+        width: 90%;
+        margin: 0.4rem auto 0 auto;
+    }
+
+    .archive-photo,
+    .archive-info {
+        transform: none;
+    }
+}
+/* ===== РАСПОЛОЖЕНИЕ ФОРМЫ ДОБАВЛЕНИЯ МОДЕЛИ ===== */
+
+.add-model-block {
+    display: none;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.add-model-block:target {
+    display: block;
+}
+
+.add-model-form {
+    width: 100%;
+    padding: 1rem;
+}
+
+.add-model-form p {
+    display: inline-block;
+    width: 48%;
+    margin: 0 1% 1rem 0;
+    vertical-align: top;
+}
+
+.add-model-form .full-row,
+.add-model-form .model-form-buttons {
+    width: 98%;
+}
+
+.add-model-form input,
+.add-model-form select,
+.add-model-form textarea {
+    width: 100%;
+}
+
+.add-model-form textarea {
+    min-height: 5rem;
+    resize: vertical;
+}
+
+.model-form-buttons {
+    text-align: center;
+}
+
+.model-form-buttons input {
+    width: auto;
+    margin: 0.3rem;
+    padding: 0.4rem 1rem;
+}
